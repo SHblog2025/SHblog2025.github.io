@@ -1,0 +1,186 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+* {
+  margin:20px;
+  padding:0%;
+  box-sizing: border-box;
+  color: #faf4f4;
+}
+
+body {
+background-image: url(https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p186698_b_v8_ay.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;}
+
+
+
+.header {
+display: flex;
+justify-content: center;
+}
+
+.header img {
+  width: 30vw;
+  border: solid 20px white;
+  border-radius: 10px;
+ 
+}
+.gridcontainer img {
+ display: flex;
+ justify-content: center;
+ max-width: 15vw;
+ height: auto;
+  
+}
+
+.topnav {
+  float: left;
+  margin-top:5px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 220%;
+  text-shadow: 3px 0px 3px #f40707;
+  list-style-type: none;
+}
+
+.topnav a{
+  color: rgb(15, 15, 15);
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+.topnav li{
+  display: inline;
+  list-style-type: none;
+}
+
+
+a {
+	padding: 2px;
+  }
+
+
+.gridcontainer {
+	  display: grid;
+	  justify-items: center;
+      grid-gap: 1em;
+      grid-template-columns: 30% 30% 30%;
+      grid-template-areas:
+      "topnav topnav topnav"
+       "content1 content2 content3"
+       "content4 content5 content6"
+       "content7 content8 content9"
+      "footer  footer  footer";
+    }
+	
+  
+   .topnav {
+    grid-area: topnav;
+  }	
+.content1 {
+    grid-area: content1;
+    background-color: #290303;
+    padding: 1%;
+    border-radius: 2%;
+  }
+
+  .content2 {
+    grid-area: content2;
+    background-color: #919293;
+    padding: 1%;
+    border-radius: 2%;
+  }
+
+  .content3 {
+    grid-area: content3;
+    background-color: #1e2945;
+    padding: 1%;
+    border-radius: 2%;
+  }
+.content4 {
+    grid-area: content4;
+    background-color: #290303;
+    padding: 1%;
+    border-radius: 2%;
+  }
+  .content5 {
+    grid-area: content5;
+    background-color: #919293;
+    padding: 1%;
+    border-radius: 2%;
+  }
+  .content6 {
+    grid-area: content6;
+    background-color: #1e2945;
+    padding: 1%;
+    border-radius: 2%;
+  }
+  .content4 {
+    grid-area: content4;
+    background-color: #290303;
+    padding: 1%;
+    border-radius: 2%;
+  }
+  .content5 {
+    grid-area: content5;
+    background-color: #919293;
+    padding: 1%;
+    border-radius: 2%;
+  }
+  .content6 {
+    grid-area: content6;
+    background-color: #1e2945;
+    padding: 1%;
+    border-radius: 2%;
+  }
+    .content7 {
+    grid-area: content7;
+    background-color: #290303;
+    padding: 1%;
+    border-radius: 2%;
+  }
+  .content8 {
+    grid-area: content8;
+    background-color: #919293;
+    padding: 1%;
+    border-radius: 2%;
+  }
+  .content9 {
+    grid-area: content9;
+    background-color: #1e2945;
+    padding: 1%;
+    border-radius: 2%;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+ 
+
+.button {
+  background-color: rgb(243, 248, 248);
+  color: #080808;
+  border-radius: 6px;
+  padding: 2%;
+  border: 0%;
+  margin: 0%;
+  font-size: larger;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 1000px) {
+  .column {
+    display: block;
+    width: 100%;
+    font-size: .75%;
+  
+  }
+  img {
+    width: 200px;
+  }
+}
