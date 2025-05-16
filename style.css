@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-color: #050507 ;
+  text-align: center;
+}
+
+h1,h2{
+    color: orange;
+}
+h1{
+    font-size: 200%;
+}
+h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 115%;
+}
+/*unvisted link*/
+a:link{
+    color:#fc0606
+}
+/*visited link*/
+a:vistited {
+    color:yellow
+}
+/*mouse over link*/
+a:hover {
+    color: rgb(187, 84, 24);
+}
+/*selected link*/
+a:active {
+    color: rgb(172, 141, 6);
+}
+small{
+    color: #fc0606;
+}
+
+/* Style the header */
+.header {
+  color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+}
+
+
+
+/* Style the footer */
+.footer {
+  background-color: #ec940f;
+  color: #0a0a0a;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
